@@ -8,12 +8,13 @@
  */
 int _puts(char *leo)
 {
+	 char *dts = leo;
 	int count = 0;
 
-	while (*leo)
+	while (*dts)
 	{
-		_putchar(*leo);
-		leo++;
+		_putchar(*dts);
+		dts++;
 		count++;
 	}
 	return (count);
