@@ -14,9 +14,9 @@
  * Return: A pointer to the matching printing function,
  * or NULL if no match is found.
  */
-int (*set_print(char s))(va_list, flags_t *)
+int (*set_print(char s))(va_list, flags_f *)
 {
-	pr_handler func_arr[] = {
+	fo_handler func_arr[] = {
 		{'i', print_digits},
 		{'s', print_str},
 		{'c', print_char},
