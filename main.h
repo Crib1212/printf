@@ -1,9 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-
-#include <stdarg.h>
-#include <stddef.h>
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  ** struct format_handler - structure containing char and int
@@ -15,7 +12,7 @@
  ** @hash: Flag for the '#' character.
  ** @space: Flag for the ' ' (space) character.
  ** Return: int
- **/;
+ **/
 
 
 typedef struct format_handler
@@ -52,5 +49,4 @@ typedef struct flags_format
 	int hash;
 	int space;
 } flags_f;
-
 #endif
