@@ -5,11 +5,11 @@
  * and turns on flags.
  *
  * @s: Character that holds the flag specifier.
- * @f: Pointer to the 'flags_t' struct where we turn the flags on.
+ * @f: Pointer to the 'flags_f' struct where we turn the flags on.
  *
  * Return: 1 if a flag has been turned on, 0 otherwise.
  */
-int call_flag(char s, flags_t *f)
+int call_flag(char s, flags_f *f)
 {
 	int i = 0;
 

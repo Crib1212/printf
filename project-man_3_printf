@@ -28,7 +28,7 @@ The int argument is converted to signed decimal notation.
 .B c
 The int argument is converted to an unsigned char, and the resulting character is written.
 .TP
-.B s 
+.B s
 The const char * argument is expected to be a pointer to an array of character type (pointer to a string). Characters from the array are written up (but not including) a terminating null byte ('\0').
 .TP
 .B x, X
@@ -45,8 +45,8 @@ Prints a string in reverse
 .TP
 .B R
 Prints a string converted to rot13
-.TP 
-.B % 
+.TP
+.B %
 A '%' is written but no argument is converted. The complete version specification is '%%'
 .SH EXAMPLE
 To print the day of the year, where weekday and month are pointers to strings and day and year are integers:
@@ -57,4 +57,4 @@ _printf("%s, %s %d, %d\\n", weekday, month, day, year);
 .SH SEE ALSO
 .I printf(3)
 .SH AUTHOR
-Chukwudi Leo, Patrick igwe
+Chukwudi Ezeatu, Patrick igwe

@@ -10,21 +10,21 @@
  *
  * Return: The resulting string representation after conversion.
  */
-char *convert(unsigned long int num, int base, int lwrcase)
+char *convert(unsigned long int num, int base, int lowercase)
 {
 	static char *rep;
 	static char buff[50];
-	char *ptr;
+	char *dts;
 
-	rep = (lwrcase)
+	rep = (lowercase)
 		? "0123456789abcdef"
 		: "0123456789ABCDEF";
-	ptr = &buff[49];
-	*ptr = '\0';
+	dts = &buff[49];
+	dts = '\0';
 	do {
-		*--ptr = rep[num % base];
+		*--dts = rep[num % base];
 		num /= base;
 	} while (num != 0);
 
-	return (ptr);
+	return (dts);
 }
