@@ -1,14 +1,12 @@
 #include "main.h"
 
 /**
- * print_str - Prints a string.
- * @ls: va_list arguments from _printf.
- * @fl: Pointer to the 'flags_t' struct that ascertains
- * if a flag is passed to _printf.
- *
+ * print_leo- Print string
+ * @fl: Pointer to flags_f
+ *@ls: va_list argument
  * Return: Number of characters printed.
  */
-int print_str(va_list ls, flags_t *fl)
+int print_leo(va_list ls, flags_f *fl)
 {
 	char *s = va_arg(ls, char *);
 
