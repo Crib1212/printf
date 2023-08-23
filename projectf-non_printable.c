@@ -9,7 +9,7 @@
  *
  * Return: The number of characters printed.
  */
-int print_non_printable(va_list ls, flags_f *fl)
+int print_non_printable(va_list ls, flags_t *fl)
 {
 	int i, count = 0;
 	char *pe;

@@ -2,12 +2,12 @@
 
 /**
  * print_digits - prints a number
- * @flags_f : format to print number
+ * @flags_t : format to print number
  * @ls: va_list with number to print
  * Return: number of characters printed
  */
 
-int print_digits(va_list ls, flags_f *fl)
+int print_digits(va_list ls, flags_t *fl)
 {
 	int n = va_arg(ls, int);
 	int pe = count_digit(n);

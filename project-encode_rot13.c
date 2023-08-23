@@ -7,7 +7,7 @@
  *
  * Return: Length of the printed string.
  */
-int encode_rot13(va_list ls, flags_f *fl)
+int encode_rot13(va_list ls, flags_t *fl)
 {
 	int i, j;
 	char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

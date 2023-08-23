@@ -7,7 +7,7 @@
  *
  * Return: Number of characters printed.
  */
-int print_unsigned(va_list ls, flags_f *fl)
+int print_unsigned(va_list ls, flags_t *fl)
 {
         unsigned int u = va_arg(ls, unsigned int);
         char *leo = convert(u, 10, 0);

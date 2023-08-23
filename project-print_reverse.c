@@ -7,7 +7,7 @@
  *
  * Return: The length of the printed string.
  */
-int print_rev(va_list ls, flags_f *fl)
+int print_rev(va_list ls, flags_t *fl)
 {
 	int x = 0, y;
 	char *s = va_arg(ls, char *);
