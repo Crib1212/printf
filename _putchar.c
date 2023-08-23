@@ -9,25 +9,20 @@
 
 int _putchar(char c)
 {
-	static int cont;
 	static char buffer[1024];
+	static int buffer_index;
 
-	if (c == -1)
+	if (c == -1 || buffer_index >= 1023)
 	{
-		cont = 0;
-		return (0);
+		write(1, buffer, buffer_index);
+		buffer_index = 0;
 	}
-	if (c == -2 || cont == 1024)
-	{
-		write(1, buffer, cont);
-		cont = 0;
-	}
-	if (c != -1 && c != -2)
-	{
-		buffer[cont] = c;
-		cont++;
-		return (1);
-	}
-	return (0);
 
+	if (c != -1)
+	{
+		buffer[buffer_index] = c;
+		buffer_index++;
+	}
+
+	return (1);
 }
