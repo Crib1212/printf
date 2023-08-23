@@ -1,5 +1,9 @@
+#ifndef MAIN_H
+#define MAIN_H
 
-<<<<<<< HEAD
+#include <stdlib.h>
+#include <stdarg.h>
+
 /**
  ** struct format_handler - structure containing char and int
  ** @c: character for format specifier
@@ -47,6 +51,5 @@ typedef struct flags_format
 	int hash;
 	int space;
 } flags_f;
+
 #endif
-=======
->>>>>>> e79fdc5ecf647b39a05262a85532f0dcb080a5d6
