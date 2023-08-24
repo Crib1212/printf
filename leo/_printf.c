@@ -17,10 +17,10 @@
 
 int _printf(const char *format, ...)
 {
-	int (*print_leofuncts)(va_list, flags_f *);
+	int (*print_leofuncts)(va_list, flags_t *);
 	const char *ch;
 	va_list arg_list;
-	flags_f flags = {0, 0, 0};
+	flags_t flags = {0, 0, 0};
 
 	double count = 0;
 
