@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #ifndef PRINT_F
 #define PRINT_F
 
@@ -26,7 +25,6 @@
  ** @space: Flag for the ' ' (space) character.
  ** Return: int
  **/
->>>>>>> fd96e01e41816bf3025a771a543ab752223074d1
 
 /* Prototype of the function*/
 int print_unint(va_list);
@@ -51,7 +49,7 @@ typedef struct conv spec_conv;
 struct conv
 {
 	char c;
-<<<<<<< HEAD
+
 	int (*f)(va_list);
 };
 
@@ -60,7 +58,7 @@ struct conv
 #define BIN 2
 
 =======
-	int (*f)(va_list ap, flags_t *f);
+int (*f)(va_list ap, flags_t *f);
 } fo_handler;
 
 int _printf(const char *format, ...);
@@ -93,4 +91,3 @@ typedef struct flags_format
 } flags_t;
 
 #endif
->>>>>>> fd96e01e41816bf3025a771a543ab752223074d1
