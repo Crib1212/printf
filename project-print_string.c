@@ -6,7 +6,7 @@
  *@ls: va_list argument
  * Return: Number of characters printed.
  */
-int print_leo(va_list ls, flags_t *fl)
+int print_str(va_list ls, flags_t *fl)
 {
 	char *s = va_arg(ls, char *);
 

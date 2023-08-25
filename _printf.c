@@ -17,7 +17,7 @@
 
 int _printf(const char *format, ...)
 {
-	int (*print_leofuncts)(va_list, flags_t *);
+	int (*pr_funcs)(va_list, flags_t *);
 	const char *ch;
 	va_list arg_list;
 	flags_t flags = {0, 0, 0};
@@ -49,8 +49,8 @@ int _printf(const char *format, ...)
 			while (call_flag(*ch, &flags))
 				ch++;
 			pr_funcs = set_print(*ch);
-			count += (print_leofuncts)
-				? print_leofuncts(arg_list, &flags)
+			count += (pr_funcs)
+				? pr_funcs(arg_list, &flags)
 				: _printf("%%%c", *ch);
 		} else
 			count += _putchar(*ch);
