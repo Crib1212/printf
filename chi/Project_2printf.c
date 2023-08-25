@@ -34,7 +34,7 @@ int format_spec(const char *str, int *len, int *str_pos, va_list arg_l)
 		else
 			i++;
 	}
-	if (print_rem(str, str_pos, len) == -1)
+	if (print_str(str, str_pos, len) == -1)
 		return (-1);
 	return (*len);
 }

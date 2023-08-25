@@ -1,4 +1,4 @@
-#include "main h"
+#include "main.h"
 
 /**
  * cal_val - calc place of the 1st digit
