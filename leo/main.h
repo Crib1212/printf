@@ -32,7 +32,7 @@ typedef struct format_handler
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int _puts(char *leo);
+int _puts(char *str);
 int (*set_print(char s))(va_list, flags_t *);
 int call_flag(char s, flags_t *f);
 int print_str(va_list l, flags_t *f);

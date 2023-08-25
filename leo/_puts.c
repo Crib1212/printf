@@ -1,21 +1,23 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * _puts - prints a string
- * new line, to stdout.
- * @leo: input string
- * Return: count of string.
+ * _puts - Prints a string to stdout.
+ * @str: Pointer to the string to print.
+ *
+ * Return: Number of characters written.
  */
 int _puts(char *str)
 {
-         char *dts = leo;
-        int count = 0;
+	char *ptr = str;
+	int count = 0;
 
-        while (*dts)
-        {
-                _putchar(*dts);
-                dts++;
-                count++;
-        }
-        return (count);
+	while (*ptr)
+	{
+		_putchar(*ptr);
+		ptr++;
+		count++;
+	}
+
+	return (count);
 }
