@@ -6,7 +6,7 @@
  * @leo: input string
  * Return: count of string.
  */
-int _puts(char *leo)
+int _puts(char *str)
 {
          char *dts = leo;
         int count = 0;

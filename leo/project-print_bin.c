@@ -13,7 +13,7 @@
 int print_bin(va_list ls, flags_t *fl)
 {
 	unsigned int num = va_arg(ls, unsigned int);
-	char *string = convert(num, 2, 0);
+	char *str = convert(num, 2, 0);
 
 	(void)fl;
 	return (_puts(str));

@@ -13,7 +13,7 @@
 int print_HEX(va_list ls, flags_t *fl)
 {
 	unsigned int num = va_arg(ls, unsigned int);
-	char *string = convert(num, 16, 0);
+	char str = convert(num, 16, 0);
 	int ctr = 0;
 
 	if (fl->hash == 1 && str[0] != '0')

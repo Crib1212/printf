@@ -15,7 +15,7 @@
 int print_oct(va_list ls, flags_t *fl)
 {
 	unsigned int num = va_arg(ls, unsigned int);
-	char *string = convert(num, 8, 0);
+	char *leo = convert(num, 8, 0);
 	int count = 0;
 
 	if (fl->hash == 1 && str[0] != '0')
